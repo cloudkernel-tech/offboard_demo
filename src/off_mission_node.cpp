@@ -91,7 +91,7 @@ int main(int argc, char **argv)
             ("mavros/setpoint_position/local", 5);
 
     ros::Publisher nav_vel_cmd_pub = nh.advertise<geometry_msgs::Twist>
-            ("mavros/vcu_command_velocity/from_nav", 5);
+            ("mavros/vcu_command_velocity/ctrl", 5);
 
     //service for arm/disarm
     ros::ServiceClient arming_client = nh.serviceClient<mavros_msgs::CommandBool>
